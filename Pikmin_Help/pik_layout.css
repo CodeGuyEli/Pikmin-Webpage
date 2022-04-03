@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@font-face {font-family: Pikmin;
+  	    src: "pik_font";}
+
+@keyframes footerBack_change {0%   {background-color: rgb(255, 0, 0);}
+  			      33%  {background-color: rgb(255, 255, 0);}
+  			      66%  {background-color: rgb(0, 0, 255);}
+  			      100% {background-color: rgb(255, 0, 0);}}
+
+@keyframes footerWord_change {0%  {color: rgb(255, 255, 255);}
+			      33% {color: rgb(0, 0, 0);}
+			      66% {color: rgb(255, 255, 255);}
+			      100%{color: rgb(255, 255, 255);}}
+
+
+
+/*                             HTML + fonts                             */
+
+html {background-color: rgb(0, 50, 0);
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 13px;}
+
+html {background-image: url(pik_background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;}
+
+body header, nav, h1 {font-family: Pikmin;}
+
+body article section#references {font-size: 10px;}
+
+body article > video {display: block;
+   		      margin: 0px auto;
+   		      max-width: 1100px;}
+
+body article > p {font-size: 0.90em;
+		  text-align: center;}
+
+
+
+/*				Body + misc.				*/
+
+body {background: rgb(255, 255, 255);
+      box-shadow: rgb(0, 0, 0) 10px 0px 10px,  rgb(0, 0, 0) -10px 0px 10px;
+      margin: 0px auto;
+      max-width: 1024px;}
+
+body > footer {color: rgb(0, 0, 0);
+	       font-size: 0.80em;
+   	       text-align: center;
+   	       height: 20px;
+   	       line-height: 20px;
+   	       width: 100%;}
+
+body > footer {background-color: rgb(255, 0, 0);
+  	       animation-name: footerBack_change;
+  	       animation-duration: 5s;
+	       animation-iteration-count: infinite;}
+
+body > footer > p {animation-name: footerWord_change;
+  	       	   animation-duration: 5s;
+	       	   animation-iteration-count: infinite;}
+
+body img.homeimg {display: block;
+   		  float: center;
+   		  width:50%;
+   		  padding-left:25%;}
+
+body img.areaimg {display: block;
+   		  float: center;
+   		  width:30%;
+   		  padding-left: 35%;}
+
+body h1 {font-size: 2em;
+  	 text-align: center;
+  	 margin: 0px 0px;
+  	 letter-spacing: 3px;
+   	 text-shadow: white 3px 3px 2px;}
+
+
+
+/*				Header				*/
+
+body > header {background-color: rgb(25, 25, 25);
+   	       width: 100%;}
+
+body header > img {display: block;
+   		   margin: 0px auto;
+   		   width: 100%;
+   		   max-width: 1100px;}
+
+/*				top_bar				*/
+
+nav.top_bar {background-color: rgb(25, 25, 25);
+	     padding-left: 0px;
+	     text-decoration: none;}
+
+nav.top_bar ul li {padding-left: 0px;
+   		   width: 95%;
+   		   list-style-type: none;}
+
+nav.top_bar::before {content: "";
+   		     display: table;
+   		     clear: both;}
+
+nav.top_bar::after {content: "";
+   		    display: table;
+   		    clear: both;}
+
+nav.top_bar ul li {float: center;
+   		   text-align: center;
+   		   border-radius: 100px;
+   		   background-color: rgb(0, 50, 0);
+   		   margin: 3px;
+   		   line-height: 30px;
+   		   -webkit-filter: drop-shadow(1px 1px 0px rgb(50, 0, 0));
+   		   filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+   		   list-style-type: none;}
+
+nav.top_bar ul li a {color: rgb(255, 255, 255);
+   		     text-decoration: none;}
+
+nav.top_bar ul li#current {background-color: rgb(100, 10,10);}
+
+
+
+/*			   Sections				*/
+
+section#parts {padding: 10px 0px 10px 10px;}
+
+section#parts h2 {font-size: 1.2em;
+   		  margin-top: 10px;}
+
+section#parts ul {margin-top: 5px;}
+
+section#parts ul li {line-height: 1.4em;}
+
+article section#summary p {font-size: 1.15em;
+   			   line-height: 1.2em;
+   			   margin: 15px 5px 10px 10px;}
+
+article section#references ul li {font-size: 1.15em;
+   				  line-height: 1.2em;
+   				  margin: 15px 5px 10px 10px;}
+
+
+
+/*				area_list				*/
+
+nav#area_list {background-color: rgb(197, 204, 175);}
+
+nav#area_list ul li {float: top;
+   		     text-align: center;
+   		     border-radius: 100px;
+   		     background-color: rgb(0, 100, 0);
+   		     margin: 2px;
+   		     line-height: 15px;
+   		     -webkit-filter: drop-shadow(1px 1px 2px rgb(50, 0, 0));
+   		     filter: drop-shadow(1px 1px 2px black);
+   		     list-style-type: none;}
+
+nav#area_list ul li#current {background-color: rgb(100, 10, 10)}
+
+nav#area_list ul li a {color: rgb(255, 255, 255);
+   		       text-decoration: none;}
+
+nav#area_list {background-color: rgb(50, 50, 50);}
+
+nav#area_list ul li {padding-left: 0px;	
+		     width: 95.5%;
+   		     list-style-type: none;}
+
+nav#area_list::before {content: "";
+   		       display: table;
+   		       clear: both;}
+
+nav#area_list::after {content: "";
+   		      display: table;
+   		      clear: both;}
+	   
